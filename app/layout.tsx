@@ -28,9 +28,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${pretendard.variable}`}>
       <body>
-        <div className="w-[1440px] h-[113px] bg-white">
-          <div className="pt-[10px]">
-            <Link href="/" className="flex justify-center">
+        <div className="w-[1440px] h-[113px] bg-red-600">
+          <div className="pt-[10px] flex justify-center">
+            <Link href="/" className="flex">
               <Image src={logo} alt="logo" className="h-10 w-10"/> 
               <span className="text-black text-5xl font-extralight font-['PretendardVariable']">
                 Refugee
@@ -39,6 +39,11 @@ export default function RootLayout({
                 Outreach Service
               </span>
             </Link>
+            <div className="flex pl-[162px]">
+              <Link href="/signin" className="flex flex w-[86px] h-[30px] text-center text-black text-l font-normal font-['PretendardVariable']">회원가입</Link>
+              <Link href="/login" className="flex w-[86px] h-[30px] text-center text-black text-l font-normal font-['PretendardVariable']">로그인</Link>
+            </div>
+            
           </div>
           <div className="p-[10px]"></div>
           <div className="text-center">
